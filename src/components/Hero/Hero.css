@@ -1,0 +1,89 @@
+/* seção inteira do topo */
+.hero {
+  /*min-height: 100vh; /* ocupa pelo menos a altura da tela */
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  background: #0f172a; /* fundo escuro */
+  color: white; /* texto branco */
+  padding: 2rem;
+}
+
+/* container que segura imagem e conteúdo */
+.hero-container {
+  max-width: 1100px; /* limita largura máxima */
+  width: 100%; /* ocupa toda largura possível até o limite */
+  display: flex; /* coloca imagem e texto lado a lado */
+  align-items: center; /* alinha verticalmente */
+  justify-content: space-between; /* espaço entre os dois lados */
+  gap: 3rem; /* espaço entre imagem e texto */
+  flex-wrap: wrap; /* quebra em telas menores */
+}
+
+/* bloco da imagem */
+.hero-image {
+  flex: 1; /* ocupa espaço proporcional */
+  display: flex;
+  justify-content: center;
+}
+
+/* imagem em si */
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* evita deformar a imagem */
+  border-radius: 50%; /* deixa redonda */
+  border: 4px solid #22c55e; /* borda verde */
+}
+
+/* bloco do conteúdo textual */
+.hero-content {
+  flex: 2; /* dá mais espaço para o texto que para a imagem */
+  max-width: 600px;
+}
+
+/* nome principal */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* subtítulo */
+.hero-content h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #cbd5e1; /* cinza claro */
+  margin-bottom: 1.5rem;
+}
+
+/* parágrafo */
+.hero-content p {
+  font-size: 1rem;
+  line-height: 1.7; /* aumenta espaço entre linhas */
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+/* container dos botões */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* estilo base dos links/botões */
+.hero-buttons a {
+  text-decoration: none;
+  background: #22c55e;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* efeito hover */
+.hero-buttons a:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}

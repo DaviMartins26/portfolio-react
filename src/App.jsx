@@ -1,7 +1,11 @@
+import Hero from "./components/Hero/Hero"
+import Projects from "./components/Projects/Projects"
+
 function App() {
   return (
     <>
-      <h1>Portfólio React</h1>
+      <Hero />
+      <Projects />
     </>
   )
 }
